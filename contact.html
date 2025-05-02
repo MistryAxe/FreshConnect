@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FRESH - Search Jobs</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+    <body>
+
+       
+         <header>
+            <div id="navbar" class="obj-width">
+                <a href="index.html"><img class="" alt=""></a>
+                <ul id="menu" class="active">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Messages</a>
+                    </li>
+                    <li>
+                        <a href="">Opportunities</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="">Browse Jobs</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <button id="w-btn">Join</button>
+                </ul>
+                <i id="bar" class="bx bx-menu"></i>
+            </div>
+         </header>
+
+
+
+         <section class="contact obj-width sec-space extra-space">
+            <div class="contact-img">
+                <h2>Get in touch</h2>
+                <p>We are here to help</p>
+                <img src="images/contact.svg" alt=""/>
+            </div>
+
+            <form id="contact-form" method="POST" action="send-email.php">
+                <input type="text" name="name" id="name" autocomplete="off" required>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" autocomplete="off" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" row="5" required></textarea>
+
+                <input type="submit" id="g-btn" value="Submit">
+            </form>
+         </section>
+         <section class="contact obj-width sec-space">
+            <div id="live-map" style="width: 100%; height: 450px; border-radius: 1rem;"></div>
+          </section>
+
+        
+
+
+        <script async
+          src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initLiveMap">
+        </script>
+
+        <script src="PageBehaviour.js"></script>
+
+        
+        <script src="toggle.js"></script>
+    </body>
+
+</html>
